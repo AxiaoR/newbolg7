@@ -1,30 +1,154 @@
-<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/newblog/css/style.css"><link rel="stylesheet" href="/newblog/css/blog_basic.css"><link rel="stylesheet" href="/newblog/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/newblog/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#发文教学">发文教学</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/newblog/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">币圈新鲜事</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
-//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
-window.onload = function() {
-	if (window.matchMedia("(max-width: 960px)").matches) {
-		var sidebar = document.querySelector('.sidebar');
-		var sidebarHeight = sidebar.offsetHeight;
-		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-	}
-	//- 页面加载完成后，显示content
-	//- Display content after page loading is complete
-	document.querySelector(`.content`).style.display = "block";
+<!DOCTYPE html>
+<html>
 
-	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
-	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
-	window.addEventListener('resize', function() {
-		if (window.matchMedia("(max-width: 960px)").matches) {
-			var sidebar = document.querySelector('.sidebar');
-			var sidebarHeight = sidebar.offsetHeight;
-			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-		} else {
-			//- 如果是桌面端，则设置content的margin-top为60px
-			//- If it is a desktop terminal, set the margin-top of content to 60px
-			document.querySelector('.content').style.marginTop = "60px";
-		}
-	});
-}
-</script><div class="post animated fadeInDown" id="发文教学"><div class="post-title"><h1><a>发文教学</a></h1></div><div class="post-content"><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><ul>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>币圈新鲜事</title>
+    
+    <meta property="og:type" content="website">
+<meta property="og:title" content="币圈新鲜事">
+<meta property="og:url" content="http://axiaor.github.io/newblog/categories/%E5%88%86%E7%B1%BB1/index.html">
+<meta property="og:site_name" content="币圈新鲜事">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://source.unsplash.com/random/?profile">
+<meta property="article:author" content="AxiaoR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://source.unsplash.com/random/?profile">
+
+    
+        <link rel="shortcut icon" href="/newblog/favicon.ico">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/avalon/stylesheet.css?v=1">
+    <!-- Custom styles for this template -->
+    
+<link rel="stylesheet" href="/newblog/css/main.css">
+
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <header>
+        <!-- Carousel -->
+        
+            <div id="carousel" class="carousel slide" data-bs-ride=carousel >
+    <div class="carousel-indicators">
+        
+    </div>
+    <div class="carousel-inner">
+        
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+        
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-md bg-black" data-bs-theme="dark">
+    <div class="container my-1">
+        <a class="navbar-brand" href="/">币圈新鲜事</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                
+            </ul>
+            <form class="d-flex m-0" role="search">
+                <div class="collapse collapse-horizontal" id="navbarSearch">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <button class="btn btn-outline-light" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSearch"
+                aria-controls="navbarSearch" aria-expanded="false" aria-label="Search Bar">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <!-- Call to action -->
+    
+        <div class="call-to-action-wrap">
+    <div class="call-to-action">
+        <div class="d-flex flex-row justify-content-center align-items-center gap-4 text-light fs-5 z-2 position-relative">
+            <div> Elise theme</div>
+            <a class="call-to-action-button" type="button" href=>Get Started</a>
+        </div>
+    </div>
+</div>
+    
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="masonry-layout" class="row py-4" data-masonry='{"percentPosition": true }'>
+            <!-- Sidebar -->
+
+    <aside class="col-md-6 col-lg-4 mb-4">
+        <div class="p-3 text-light" style="background-color: #353535;">
+    
+        <img src=https://source.unsplash.com/random/?profile class="img-fluid rounded mb-3" alt="...">
+    
+    <h4>About Us</h4>
+    <p>Elise is a free responsive theme for Hexo. It is based on Bootstrap 5 and it is built to be easy to use and beautiful to look at.</p>
+
+    <div class="d-flex flex-wrap gap-2">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+    </aside>
+
+
+
+    
+
+
+
+    
+        <div class="col-md-6 col-lg-4 mb-4">
+    <div class="post p-3">
+        
+            <a href="/newblog/2025/03/17/币圈新闻3月19/">
+                <img src=/img/butterfly-icon.png class="img-fluid rounded mb-3" alt="...">
+            </a>
+        
+
+        <!-- Title -->
+        <h3 class="">
+            <b>
+                <a href="/newblog/2025/03/17/币圈新闻3月19/" class="link-dark link-underline-opacity-0 link-underline-opacity-75-hover">
+                    发文教学
+                </a>
+            </b>
+        </h3>
+
+        <!-- Content -->
+        <div class="text-secondary">
+            <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><ul>
 <li>无序列表</li>
 </ul>
 <ol>
@@ -38,4 +162,36 @@ window.onload = function() {
 <p>修改完你可以直接预览，也可以输入下面的指令上传</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl;hexo g;hexo d</span><br></pre></td></tr></table></figure>
 <p>1231231<br>1#@<br>！<br>@3！@<br>3</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"></ul></div></div><script src="/newblog/js/jquery-migrate-1.2.1.min.js"></script><script src="/newblog/js/jquery.appear.js"></script><script src="/newblog/js/add-bookmark.js"></script></body></html>
+
+        </div>
+
+        <!-- Only display the Read More link if we are displaying an excerpt -->
+        
+    </div>
+</div>
+    
+
+
+<nav class="d-flex justify-content-center gap-3">
+    
+    
+</nav>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer -->
+        <div class="navbar justify-content-center align-items-center text-light">
+    &copy; 2025 AxiaoR<br>
+</div>
+    </footer>
+
+    <!-- After footer scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+
+<script src="/newblog/js/main.js"></script>
+
+</body>
+
+</html>
